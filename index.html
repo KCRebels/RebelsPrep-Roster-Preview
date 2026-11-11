@@ -92,7 +92,7 @@
 }
 
 .coach-bottom-nav button[hidden]{display:none!important}
-</style><aside class="preview-notice"><strong>PRIVATE PREVIEW — FAKE PLAYERS ONLY</strong>Administrator access is simulated. No sign-in or Firebase connection. Changes last until you refresh this page. This does not verify your real account or mean the feature is deployed.</aside><main id="app"></main><script type="module">// Permanent roster operations. These helpers do not modify HotB records.
+</style><aside class="preview-notice"><strong>TEST PREVIEW — FAKE PLAYERS ONLY</strong>Administrator access is simulated. No sign-in or Firebase connection. Changes last until you refresh this page. This does not verify your real account or mean the feature is deployed.</aside><main id="app"></main><script type="module">// Permanent roster operations. These helpers do not modify HotB records.
 const VIRTUAL_TEAM_IDS=new Set(['kc-rebels-nationals','kc-rebels-all-regional']);
 function cleanName(value){
  const name=String(value||'').trim().replace(/\s+/g,' ');
@@ -150,7 +150,7 @@ const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&
 const individual=teams.filter(t=>!['kc-rebels-nationals','kc-rebels-all-regional'].includes(t.id));
 let ctx=null,teamId='',players=[],busy=false,error='',message='',editId='',mode='list';
 function shell(body){
- app.innerHTML='<div class="rm-shell"><span class="rm-back">RebelsPrep · Local Preview</span><h1>Roster</h1><p class="rm-subtitle">Try add, edit, remove and transfer with fake players. Refresh this page to reset.</p>'+ (error?'<p class="rm-error" role="alert">'+esc(error)+'</p>':'')+(message?'<p class="rm-success" role="status">'+esc(message)+'</p>':'')+body+'</div><nav class="coach-bottom-nav" aria-label="Coach navigation"><button data-coach-view="home">Home</button><button data-coach-view="practice">Practice</button><button data-coach-view="focus">Focus</button><button data-coach-view="more">More</button><button data-coach-view="roster" aria-current="page">Roster</button></nav>';
+ app.innerHTML='<div class="rm-shell"><span class="rm-back">RebelsPrep · Test Preview</span><h1>Roster</h1><p class="rm-subtitle">Try add, edit, remove and transfer with fake players. Refresh this page to reset.</p>'+ (error?'<p class="rm-error" role="alert">'+esc(error)+'</p>':'')+(message?'<p class="rm-success" role="status">'+esc(message)+'</p>':'')+body+'</div><nav class="coach-bottom-nav" aria-label="Coach navigation"><button data-coach-view="home">Home</button><button data-coach-view="practice">Practice</button><button data-coach-view="focus">Focus</button><button data-coach-view="more">More</button><button data-coach-view="roster" aria-current="page">Roster</button></nav>';
  app.querySelectorAll('.coach-bottom-nav [data-coach-view]').forEach(button=>button.addEventListener('click',()=>{const target=button.dataset.coachView;if(target==='roster')return;location.assign('./coach.html?v=420&view='+(target==='more'?'library':target));}));
 }
 function permittedTeams(){return individual.filter(t=>canManageTeam(ctx?.account,t.id));}
@@ -224,7 +224,7 @@ function coachHome(){return '<div class="coach-portal-home"><section class="coac
 function previewNav(){return '<nav class="coach-bottom-nav"><button data-coach-view="home" aria-current="page">Home</button><button data-coach-view="practice">Practice</button><button data-coach-view="focus">Focus</button><button data-coach-view="more">More</button><button data-coach-view="roster">Roster</button></nav>';}
 function firstName(){return 'Coach';}function accountActions(){return '';}
 function dashboard(){app.innerHTML=coachHome()+previewNav();}
-document.addEventListener('click',event=>{const button=event.target.closest('[data-coach-view]');if(!button)return;event.preventDefault();event.stopImmediatePropagation();const destination=button.dataset.coachView;if(destination==='home'){dashboard();}else if(destination==='roster'){mode='list';editId='';error='';message='';reload();}else{alert('This local preview covers the dashboard and Roster. Other screens are unchanged.');}},true);
+document.addEventListener('click',event=>{const button=event.target.closest('[data-coach-view]');if(!button)return;event.preventDefault();event.stopImmediatePropagation();const destination=button.dataset.coachView;if(destination==='home'){dashboard();}else if(destination==='roster'){mode='list';editId='';error='';message='';reload();}else{alert('This test preview covers the dashboard and Roster. Other screens are unchanged.');}},true);
 dashboard();
 
 (()=>{/* Coach bottom nav: Home, Practice, Focus, Drills, Roster. Keep the native More control only as a hidden routing driver for Drill Library. */
