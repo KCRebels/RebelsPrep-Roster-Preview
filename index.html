@@ -1,98 +1,5 @@
-<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; connect-src 'none'; form-action 'none'; base-uri 'none'"><title>RebelsPrep — Coach Dashboard Preview</title><style>body{font-family:system-ui,sans-serif;margin:0;background:#f5f6f8;color:#17212e}*{box-sizing:border-box}button,select{cursor:pointer}.preview-notice{max-width:720px;margin:20px auto;padding:18px;background:#fff6da;border:2px solid #e1c46f;border-radius:14px;line-height:1.5}.preview-notice strong{display:block}button:disabled{opacity:.6}</style><style>.rm-shell{max-width:720px;margin:0 auto;padding:8px 12px 100px}.rm-shell h1{font-size:36px;margin:10px 0}.rm-back{font-size:16px;font-weight:800;color:#232b37;text-decoration:none}.rm-subtitle{font-size:16px;color:#697386;margin:0 0 20px}.rm-error,.rm-success{padding:12px;border-radius:10px;background:#f8ecec;color:#86151f}.rm-success{background:#edf5ec;color:#24512e}.rm-label{display:block;font-size:15px;font-weight:800;margin:16px 0}.rm-label input,.rm-label select{display:block;box-sizing:border-box;width:100%;padding:13px;border:2px solid #d8ddd9;border-radius:12px;margin:6px 0;font-size:16px;background:white}.rm-actions{display:flex;gap:9px;align-items:center;justify-content:space-between;flex-wrap:wrap}.rm-actions button{padding:12px 14px;background:white;color:#111827;border:2px solid #d8ddd9;border-radius:12px;font-size:15px;font-weight:800}.rm-actions .rm-primary,.rm-primary{background:#c8102e;color:white;border:2px solid #c8102e;border-radius:12px;padding:12px 16px;font-size:16px;font-weight:800}.rm-players{display:grid;gap:12px;margin-top:18px}.rm-player{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px;border:2px solid #d8ddd9;border-radius:18px;background:white}.rm-player strong{font-size:18px}.rm-player small{display:block;color:#667085;margin-top:6px}.rm-form{padding:20px;border:2px solid #d8ddd9;border-radius:20px;background:white}.rm-form h2{margin:0}.rm-checks{display:flex;gap:22px;margin:14px 0 22px;font-weight:800}.rm-checks input{width:18px;height:18px}.rm-form .rm-actions{justify-content:flex-end}@media(max-width:520px){.rm-player{align-items:flex-start;flex-direction:column}.rm-player .rm-actions{width:100%;justify-content:flex-end}}
-</style><style>/* Build 318: NPB coach portal aligned to the HotB player-portal visual language. */
-.coach-portal-home,.coach-portal-page{max-width:760px;margin:0 auto;padding:8px 14px 120px;box-sizing:border-box}.coach-greeting{margin:16px 0 26px;padding:30px 34px 34px;border:3px solid #d8ddd9;border-radius:30px;background:#fff;box-shadow:0 7px 0 rgba(12,18,34,.05)}.coach-greeting .eyebrow,.coach-card .eyebrow,.coach-section-eyebrow{margin:0 0 10px;color:#a92c32;font-size:17px;font-weight:900;letter-spacing:.13em;line-height:1.15;text-transform:uppercase}.coach-greeting h1{margin:0 0 16px;font-size:48px;line-height:1.02;letter-spacing:-.03em;color:#0c1222}.coach-greeting p{margin:0;color:#657084;font-size:22px;font-weight:700;line-height:1.38}.coach-card-stack{display:grid;gap:24px}.coach-card{display:block;width:100%;box-sizing:border-box;padding:30px 34px 32px;border:3px solid #d8ddd9;border-radius:30px;background:#fff;color:#0c1222;text-align:left;text-decoration:none;box-shadow:0 7px 0 rgba(12,18,34,.05)}.coach-card:active{transform:scale(.995)}.coach-card h2{margin:0 0 12px;font-size:40px;line-height:1.04;letter-spacing:-.025em}.coach-card p{margin:0;color:#657084;font-size:21px;font-weight:700;line-height:1.4}.coach-card .coming{display:block;margin:10px 0 0;color:#8b8f98;font-size:14px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}.coach-portal-actions{margin-top:24px;display:flex;gap:10px;flex-wrap:wrap}.coach-portal-actions button,.coach-portal-actions a{min-height:50px;padding:0 16px;border:2px solid #d8ddd9;border-radius:14px;background:#fff;color:#0c1222;font-size:16px;font-weight:800;text-decoration:none}.coach-portal-actions .primary{border-color:#c8102e;background:#c8102e;color:#fff}.coach-page-head{margin:8px 0 24px}.coach-page-head .coach-back{display:none!important}.coach-page-head h1{margin:0 0 10px;font-size:43px;line-height:1.03;letter-spacing:-.025em;color:#111}.coach-page-head p{margin:0;color:#657084;font-size:20px;font-weight:600;line-height:1.4}.coach-portal-page>.panel{padding:0!important;border:0!important;background:transparent!important;box-shadow:none!important}.coach-portal-page>.panel>.coach-card-stack{margin-bottom:24px!important}.coach-list{display:grid;gap:16px}.coach-list-card{padding:20px 22px;border:2px solid #d8ddd9;border-radius:22px;background:#fff}.coach-list-card h3{margin:0 0 7px;font-size:22px}.coach-list-card p{margin:4px 0;color:#667085;font-size:16px;line-height:1.4}.coach-search{width:100%;box-sizing:border-box;height:54px;margin:0 0 18px;padding:0 16px;border:2px solid #d8ddd9;border-radius:14px;background:#fff;font-size:17px}.coach-drill-details{margin-top:12px}.coach-drill-details summary{font-weight:800;cursor:pointer}.coach-focus-row{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;padding:20px 22px;border:2px solid #d8ddd9;border-radius:22px;background:#fff;text-align:left}.coach-focus-row strong{font-size:21px}.coach-focus-status{text-align:right;font-size:13px;font-weight:900;color:#0c1222}.coach-focus-status small{display:block;margin-top:4px;color:#667085;font-weight:700}.coach-form{display:grid;gap:16px;padding:24px;border:2px solid #d8ddd9;border-radius:24px;background:#fff}.coach-form label{font-weight:800}.coach-form input,.coach-form textarea,.coach-form select{width:100%;box-sizing:border-box;margin-top:7px;padding:13px;border:2px solid #d8ddd9;border-radius:13px;background:#fff;font:inherit}.coach-form textarea{min-height:110px;resize:vertical}.coach-form .primary{min-height:54px;border:0;border-radius:14px;background:#c8102e;color:#fff;font-size:17px;font-weight:900}.coach-note{padding:20px 22px;border:2px solid #d8ddd9;border-radius:22px;background:#fff;color:#667085;font-size:17px;line-height:1.45}.coach-bottom-nav{position:fixed;left:0;right:0;bottom:0;z-index:40;display:grid;grid-template-columns:repeat(5,1fr);gap:0;border-top:1px solid #d8ddd9;background:#fff;padding:10px max(10px,env(safe-area-inset-right)) calc(10px + env(safe-area-inset-bottom)) max(10px,env(safe-area-inset-left));box-shadow:0 -3px 14px rgba(12,18,34,.06)}.coach-bottom-nav button{min-height:58px;border:0;background:transparent;color:#515866;font-size:14px;font-weight:800}.coach-bottom-nav button[aria-current="page"]{color:#c8102e}.coach-bottom-nav span{display:block}.coach-signin-shell{max-width:680px;margin:0 auto;padding-bottom:36px}
-
-/* Build 380: clean, compact Google Form handoff for drill submissions. */
-.coach-submit-page .coach-page-head{margin-bottom:18px}
-.coach-submit-card{padding:24px 24px 22px;border:2px solid #d8ddd9;border-radius:22px;background:#fff;box-shadow:0 4px 0 rgba(12,18,34,.04)}
-.coach-submit-card .coach-section-eyebrow{margin-bottom:7px;font-size:13px;letter-spacing:.11em}
-.coach-submit-card h2{margin:0 0 10px;color:#111827;font-size:29px;line-height:1.08;letter-spacing:-.02em}
-.coach-submit-copy{margin:0;color:#4f596a;font-size:17px;font-weight:600;line-height:1.45}
-.coach-submit-button{display:flex;align-items:center;justify-content:space-between;gap:14px;width:100%;box-sizing:border-box;min-height:56px;margin:20px 0 0;padding:0 18px;border:0;border-radius:14px;background:#c8102e;color:#fff!important;text-decoration:none!important;font-size:17px;font-weight:900;line-height:1.1;box-shadow:none}
-.coach-submit-button span{font-size:31px;line-height:1;font-weight:700;transform:translateY(-1px)}
-.coach-submit-button:active{transform:scale(.995)}
-.coach-submit-note{margin:14px 0 0;padding:0 2px;color:#7b8494;font-size:13px;font-weight:700;line-height:1.35}
-
-@media(max-width:520px){.coach-greeting{padding:26px 28px 30px;border-radius:26px}.coach-greeting h1{font-size:43px}.coach-greeting p{font-size:20px}.coach-card-stack{gap:20px}.coach-card{padding:26px 28px 28px;border-radius:26px}.coach-card h2{font-size:35px}.coach-card p{font-size:19px}.coach-page-head h1{font-size:39px}.coach-page-head p{font-size:18px}.coach-submit-card{padding:20px 20px 18px;border-radius:20px}.coach-submit-card h2{font-size:26px}.coach-submit-copy{font-size:16px}.coach-submit-button{font-size:16px;min-height:54px}.coach-submit-note{font-size:12.5px}}/* Build 376: coach portal aligned with RebelsPrep + HotB. */
-.coach-portal-home,.coach-portal-page{max-width:760px;margin:0 auto;padding-left:14px!important;padding-right:14px!important;padding-bottom:96px!important;box-sizing:border-box}
-.coach-portal-home{padding-top:4px!important}
-.coach-greeting{margin:10px 0 14px!important;padding:18px 20px 20px!important;border:2px solid #d8ddd9!important;border-radius:22px!important;background:#fff!important;box-shadow:0 4px 0 rgba(12,18,34,.04)!important}
-.coach-greeting .eyebrow,.coach-card .eyebrow,.coach-section-eyebrow{margin:0 0 7px!important;color:#a92c32!important;font-size:13px!important;font-weight:900!important;letter-spacing:.12em!important;line-height:1.15!important;text-transform:uppercase!important}
-.coach-greeting h1{margin:0 0 9px!important;font-size:34px!important;line-height:1.02!important;letter-spacing:-.025em!important;color:#0c1222!important}
-.coach-greeting p{margin:0!important;color:#657084!important;font-size:16px!important;font-weight:700!important;line-height:1.34!important}
-.coach-card-stack{gap:14px!important}
-.coach-card{padding:18px 20px 20px!important;border:2px solid #d8ddd9!important;border-radius:22px!important;background:#fff!important;box-shadow:0 4px 0 rgba(12,18,34,.04)!important}
-.coach-card h2{margin:0 0 7px!important;font-size:28px!important;line-height:1.04!important;letter-spacing:-.02em!important}
-.coach-card p{margin:0!important;font-size:16px!important;font-weight:700!important;line-height:1.34!important}
-.coach-card .coming{margin-top:7px!important;font-size:12px!important}
-.coach-page-head{margin:6px 0 16px!important}.coach-page-head h1{margin:0 0 6px!important;font-size:32px!important;line-height:1.04!important}.coach-page-head p{font-size:16px!important;line-height:1.35!important}
-.coach-list{gap:12px!important}.coach-list-card{padding:16px 18px!important;border-radius:19px!important}.coach-list-card h3{font-size:20px!important;margin-bottom:5px!important}.coach-list-card p{font-size:15px!important;line-height:1.35!important}.coach-focus-row{padding:16px 18px!important;border-radius:19px!important}.coach-focus-row strong{font-size:19px!important}.coach-form{gap:13px!important;padding:18px!important;border-radius:20px!important}.coach-note{padding:16px 18px!important;border-radius:19px!important;font-size:15px!important}
-/* Account/admin utilities belong under their own page, not on the coach home dashboard. */
-.coach-portal-home>.coach-portal-actions{display:none!important}
-.coach-portal-page>.coach-portal-actions{display:grid!important;grid-template-columns:1fr!important;gap:8px!important;margin:16px 0 0!important}
-.coach-portal-page>.coach-portal-actions button,.coach-portal-page>.coach-portal-actions a{display:flex!important;align-items:center!important;justify-content:space-between!important;box-sizing:border-box!important;width:100%!important;min-height:46px!important;margin:0!important;padding:0 14px!important;border:1.5px solid #d8ddd9!important;border-radius:12px!important;background:#fff!important;color:#252a33!important;font-size:14px!important;font-weight:800!important;line-height:1.1!important;text-decoration:none!important;box-shadow:none!important}
-.coach-portal-page>.coach-portal-actions button:after,.coach-portal-page>.coach-portal-actions a:after{content:'›';font-size:20px;font-weight:700;color:#7b8495}
-.coach-portal-page>.coach-portal-actions button:active,.coach-portal-page>.coach-portal-actions a:active{background:#f4f5f6!important}
-/* Four-button HotB-style bottom navigation, evenly spaced on every coach screen. */
-.coach-bottom-nav{position:fixed!important;left:0!important;right:0!important;bottom:0!important;z-index:9999!important;display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;align-items:end!important;gap:0!important;box-sizing:border-box!important;min-height:74px!important;padding:7px 7px calc(6px + env(safe-area-inset-bottom))!important;border-top:1px solid #d8ddd9!important;background:#fff!important;box-shadow:0 -2px 10px rgba(12,18,34,.05)!important}
-.coach-bottom-nav button{display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;gap:3px!important;box-sizing:border-box!important;width:100%!important;min-width:0!important;min-height:57px!important;height:57px!important;margin:0!important;padding:3px 2px!important;border:0!important;border-radius:0!important;background:transparent!important;color:#5b5b5b!important;font-size:12px!important;font-weight:800!important;line-height:1!important;text-align:center!important;white-space:nowrap!important;box-shadow:none!important}
-.coach-bottom-nav .coach-nav-icon{display:block!important;width:25px!important;height:25px!important;line-height:0!important;margin:0!important;padding:0!important;color:inherit!important}
-.coach-bottom-nav .coach-nav-icon svg{display:block!important;width:25px!important;height:25px!important}
-.coach-bottom-nav .coach-nav-label{display:block!important;margin:0!important;padding:0!important;color:inherit!important}
-.coach-bottom-nav button[aria-current="page"]{background:transparent!important;color:#c8102e!important}
-.coach-bottom-nav button:active{background:#f5f5f5!important}
-@media(max-width:430px){.coach-portal-home,.coach-portal-page{padding-left:12px!important;padding-right:12px!important;padding-bottom:94px!important}.coach-greeting{padding:17px 18px 19px!important}.coach-greeting h1{font-size:32px!important}.coach-greeting p{font-size:15.5px!important}.coach-card{padding:17px 18px 19px!important}.coach-card h2{font-size:27px!important}.coach-card p{font-size:15.5px!important}.coach-page-head h1{font-size:30px!important}.coach-bottom-nav{padding-left:3px!important;padding-right:3px!important}.coach-bottom-nav button{font-size:11.5px!important}.coach-bottom-nav .coach-nav-icon,.coach-bottom-nav .coach-nav-icon svg{width:24px!important;height:24px!important}}
-
-/* Player Focus roster: all player tiles have a neutral outline, regardless of state. */
-#app .coach-portal-page .coach-list .coach-focus-row,
-#app .coach-portal-page .coach-list .coach-focus-row:hover,
-#app .coach-portal-page .coach-list .coach-focus-row:active,
-#app .coach-portal-page .coach-list .coach-focus-row:focus,
-#app .coach-portal-page .coach-list .coach-focus-row:focus-visible,
-#app .coach-portal-page .coach-list .coach-focus-row[aria-selected="true"],
-#app .coach-portal-page .coach-list .coach-focus-row[class*="overdue"],
-#app .coach-portal-page .coach-list .coach-focus-row[class*="attention"]{
- border:2px solid #d8ddd9!important;
- border-color:#d8ddd9!important;
- box-shadow:none!important;
- background:#fff!important;
-}
-
-/* Player Focus statuses: same age thresholds and visual hierarchy as HotB.
-   Published <7d neutral; 7–13d dark border; 14+d or never published red. */
-#app .coach-portal-page .coach-list .coach-focus-row[data-focus-status="current"],
-#app .coach-portal-page .coach-list .coach-focus-row[data-focus-status="loading"]{
- border:2px solid #d9dede!important;border-color:#d9dede!important;
- background:#fff!important;box-shadow:none!important;
-}
-#app .coach-portal-page .coach-list .coach-focus-row[data-focus-status="needs"]{
- border:2px solid #344054!important;border-color:#344054!important;
- background:#fff!important;box-shadow:none!important;
-}
-#app .coach-portal-page .coach-list .coach-focus-row[data-focus-status="overdue"]{
- border:2px solid #c71920!important;border-color:#c71920!important;
- background:#fff!important;box-shadow:none!important;
-}
-#app .coach-portal-page .coach-focus-row .coach-focus-status{
- font-size:13px!important;font-weight:900!important;color:#344054!important;
- line-height:1.2!important;max-width:60%;white-space:normal!important;
-}
-#app .coach-portal-page .coach-focus-row .coach-focus-status small{
- margin-top:4px!important;font-size:12px!important;line-height:1.2!important;
- color:#667085!important;font-weight:750!important;
-}
-#app .coach-portal-page .coach-focus-row[data-focus-status="overdue"] .coach-focus-status{
- color:#c71920!important;
-}
-#app .coach-portal-page .coach-focus-row[data-focus-status="needs"] .coach-focus-status{
- color:#344054!important;
-}
-#app .coach-portal-page .coach-focus-row[data-focus-status="loading"] .coach-focus-status{
- color:#667085!important;
-}
-
-.coach-bottom-nav button[hidden]{display:none!important}
-</style><aside class="preview-notice"><strong>TEST PREVIEW — FAKE PLAYERS ONLY</strong>Administrator access is simulated. No sign-in or Firebase connection. Changes last until you refresh this page. This does not verify your real account or mean the feature is deployed.</aside><main id="app"></main><script type="module">// Permanent roster operations. These helpers do not modify HotB records.
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src 'self' data:; connect-src 'none'; form-action 'none'; base-uri 'none'"><title>RebelsPrep · Roster Test</title><style>*{box-sizing:border-box}body{margin:0;color:#202936;background:#f6f7f8;font:16px/1.5 system-ui,sans-serif}header{max-width:744px;margin:auto;padding:22px 12px 6px}header img{width:230px;max-width:70%;height:auto}.test-bar{max-width:720px;margin:12px auto 18px;padding:16px;background:#fff4d9;border:1px solid #e1c783;border-radius:12px;font-size:14px}.test-bar strong{display:block}.test-bar p{margin:6px 0 12px}.test-row{display:flex;flex-wrap:wrap;gap:12px;align-items:end}.test-row label{flex:1;font-weight:700}.test-row select{display:block;width:100%;font:inherit;padding:10px;background:white;border:1px solid #a59a82;border-radius:6px}.test-row button{font:inherit;padding:11px;border:1px solid #a59a82;border-radius:6px;background:white;cursor:pointer}.coach-bottom-nav{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:min(100%,744px);display:flex;justify-content:space-around;background:white;padding:12px 4px max(12px,env(safe-area-inset-bottom));border-top:1px solid #ddd;z-index:10}.coach-bottom-nav button{border:0;background:none;padding:8px;font:700 13px system-ui;cursor:pointer}.coach-bottom-nav [aria-current]{color:#c8102e}button{cursor:pointer}button:disabled{opacity:.5}@media(max-width:760px){.test-bar{margin:12px}.rm-shell{padding-bottom:110px}}.rm-shell{max-width:720px;margin:0 auto;padding:8px 12px 100px}.rm-shell h1{font-size:36px;margin:10px 0}.rm-back{font-size:16px;font-weight:800;color:#232b37;text-decoration:none}.rm-subtitle{font-size:16px;color:#697386;margin:0 0 20px}.rm-error,.rm-success{padding:12px;border-radius:10px;background:#f8ecec;color:#86151f}.rm-success{background:#edf5ec;color:#24512e}.rm-label{display:block;font-size:15px;font-weight:800;margin:16px 0}.rm-label input,.rm-label select{display:block;box-sizing:border-box;width:100%;padding:13px;border:2px solid #d8ddd9;border-radius:12px;margin:6px 0;font-size:16px;background:white}.rm-actions{display:flex;gap:9px;align-items:center;justify-content:space-between;flex-wrap:wrap}.rm-actions button{padding:12px 14px;background:white;color:#111827;border:2px solid #d8ddd9;border-radius:12px;font-size:15px;font-weight:800}.rm-actions .rm-primary,.rm-primary{background:#c8102e;color:white;border:2px solid #c8102e;border-radius:12px;padding:12px 16px;font-size:16px;font-weight:800}.rm-players{display:grid;gap:12px;margin-top:18px}.rm-player{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px;border:2px solid #d8ddd9;border-radius:18px;background:white}.rm-player strong{font-size:18px}.rm-player small{display:block;color:#667085;margin-top:6px}.rm-form{padding:20px;border:2px solid #d8ddd9;border-radius:20px;background:white}.rm-form h2{margin:0}.rm-checks{display:flex;gap:22px;margin:14px 0 22px;font-weight:800}.rm-checks input{width:18px;height:18px}.rm-form .rm-actions{justify-content:flex-end}@media(max-width:520px){.rm-player{align-items:flex-start;flex-direction:column}.rm-player .rm-actions{width:100%;justify-content:flex-end}}
+</style></head><body><header><img src="rebelsprep-logo-v2.png" alt="RebelsPrep"></header><aside class="test-bar"><strong>TEST VERSION — FAKE PLAYERS ONLY</strong><p>Try your roster controls below. No login is needed. Access is simulated; this does not check real coach accounts or database permissions. Changes stay in this open tab and reset when you refresh. Use fake names only.</p><div class="test-row"><label>Test access<select id="test-access"><option value="admin">You — Administrator (all rosters)</option><option value="coachA">Team coach — 16 Regional Lickel only</option><option value="coachB">Team coach — 14 National Shafer only</option></select></label><button id="reset-test">Reset fake players</button></div></aside><main id="app"></main><script type="module">// Permanent roster operations. These helpers do not modify HotB records.
 const VIRTUAL_TEAM_IDS=new Set(['kc-rebels-nationals','kc-rebels-all-regional']);
 function cleanName(value){
  const name=String(value||'').trim().replace(/\s+/g,' ');
@@ -133,25 +40,29 @@ function canManageTeam(account,teamId){
  return Boolean(account?.active&&(account.role==='org_admin'||account.role==='org_coach'||account.role==='team_coach'&&account.teamIds?.includes(teamId)));
 }
 
-const teams=[{id:'kc-rebels-16-regional',name:'KC Rebels 16 Regional Lickel'},{id:'preview-destination',name:'Test Destination Team (fake)'}];
-const previewAccount={active:true,role:'org_admin',teamIds:['kc-rebels-16-regional']};
-const accountContext=async()=>({user:{uid:'local-preview'},account:previewAccount});
-const isOrgCoach=a=>a?.active&&a.role==='org_admin';
-const isCoach=a=>!!a?.active;
-let records=[{id:'fake-1',name:'Test Player One',teamIds:['kc-rebels-16-regional'],pitcher:true,catcher:false,active:true,jerseyNumber:'10',email:''},{id:'fake-2',name:'Test Player Two',teamIds:['kc-rebels-16-regional'],pitcher:false,catcher:true,active:true,jerseyNumber:'20',email:''}];
-async function loadTeamRoster(a,t){return rosterForTeam(records,t);}
-async function addRosterPlayer(a,t,v){records.push({...planAddPlayer({...v,teamId:t},records),id:crypto.randomUUID()});}
-async function editRosterPlayer(a,t,id,v){const p=records.find(p=>p.id===id);if(!p?.teamIds.includes(t))throw Error('Player is no longer on this team.');Object.assign(p,{...v,name:cleanName(v.name)});}
-async function removeRosterPlayer(a,t,id){const p=records.find(p=>p.id===id);Object.assign(p,planRemovePlayer(p,t));}
-async function transferRosterPlayer(a,f,t,id){const p=records.find(p=>p.id===id);Object.assign(p,planTransferPlayer(p,f,t));}
+const teams=[{"id": "kc-rebels-18-national", "name": "KC Rebels 18 National Mayhugh"}, {"id": "kc-rebels-18-regional", "name": "KC Rebels 18 Regional Jenkins"}, {"id": "kc-rebels-16-national", "name": "KC Rebels 16 National Olsen"}, {"id": "kc-rebels-16-regional", "name": "KC Rebels 16 Regional Lickel"}, {"id": "kc-rebels-16-frans", "name": "KC Rebels 16 Frans"}, {"id": "kc-rebels-14-national", "name": "KC Rebels 14 National Shafer"}, {"id": "kc-rebels-14-regional", "name": "KC Rebels 14 Regional Oestmann"}, {"id": "kc-rebels-14-mason-shafer", "name": "KC Rebels 14 Mason/Shafer"}, {"id": "kc-rebels-14-ufford", "name": "KC Rebels 14 Ufford"}, {"id": "kc-rebels-14b", "name": "KC Rebels 14B"}, {"id": "kc-rebels-12-bachkora", "name": "KC Rebels 12 Bachkora"}, {"id": "kc-rebels-12-eakin", "name": "KC Rebels 12 Eakin"}, {"id": "kc-rebels-12-huebert", "name": "KC Rebels 12 Huebert"}, {"id": "kc-rebels-12-perkins", "name": "KC Rebels 12 Perkins"}, {"id": "kc-rebels-12-stremsterfer", "name": "KC Rebels 12 Stremsterfer"}, {"id": "kc-rebels-11-coppage", "name": "KC Rebels 11 Coppage"}, {"id": "kc-rebels-10-bachkora", "name": "KC Rebels 10 Bachkora"}, {"id": "kc-rebels-10-carroll", "name": "KC Rebels 10 Carroll"}, {"id": "kc-rebels-10-graves", "name": "KC Rebels 10 Graves"}, {"id": "kc-rebels-10-perkins", "name": "KC Rebels 10 Perkins"}, {"id": "kc-rebels-9-sherman", "name": "KC Rebels 9 Sherman"}, {"id": "kc-rebels-8-cairns", "name": "KC Rebels 8 Cairns"}];
+
+const source='kc-rebels-16-regional',target='kc-rebels-14-national';
+const testAccounts={admin:{active:true,role:'org_admin',teamIds:[]},coachA:{active:true,role:'team_coach',teamIds:[source]},coachB:{active:true,role:'team_coach',teamIds:[target]}};
+let testRole='admin',records=[{id:'synthetic-001',name:'TEST Player One',teamIds:[source],pitcher:true,active:true,jerseyNumber:'10'},{id:'synthetic-002',name:'TEST Player Two',teamIds:[source],catcher:true,active:true,jerseyNumber:'20'},{id:'synthetic-003',name:'TEST Player Three',teamIds:[target],active:true,jerseyNumber:'30'}];
+const accountContext=async()=>({user:{uid:'synthetic-'+testRole},account:testAccounts[testRole]});
+const isOrgCoach=a=>!!a?.active&&['org_admin','org_coach'].includes(a.role);
+const isCoach=a=>!!a?.active&&['org_admin','org_coach','team_coach'].includes(a.role);
+function requireTeam(a,t){if(!canManageTeam(a,t))throw Error('You can manage only your assigned team.');}
+function findPlayer(a,t,id){requireTeam(a,t);const p=records.find(p=>p.id===id&&p.active&&p.teamIds.includes(t));if(!p)throw Error('Player is no longer on this team.');return p;}
+async function loadTeamRoster(a,t){requireTeam(a,t);return rosterForTeam(records,t);}
+async function addRosterPlayer(a,t,v){requireTeam(a,t);const next=planAddPlayer({...v,teamId:t},records);records.push({...next,id:crypto.randomUUID()});}
+async function editRosterPlayer(a,t,id,v){const p=findPlayer(a,t,id);const next=planAddPlayer({...v,teamId:t},records.filter(r=>r.id!==id));Object.assign(p,{name:next.name,email:next.email,jerseyNumber:next.jerseyNumber,pitcher:next.pitcher,catcher:next.catcher});}
+async function removeRosterPlayer(a,t,id){const p=findPlayer(a,t,id);Object.assign(p,planRemovePlayer(p,t));}
+async function transferRosterPlayer(a,f,t,id){if(!isOrgCoach(a))throw Error('Only the administrator can transfer players.');requireTeam(a,t);const p=findPlayer(a,f,id);Object.assign(p,planTransferPlayer(p,f,t));}
 
 const app=document.getElementById('app');
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const individual=teams.filter(t=>!['kc-rebels-nationals','kc-rebels-all-regional'].includes(t.id));
-let ctx=null,teamId='',players=[],busy=false,error='',message='',editId='',mode='list';
+let ctx=null,teamId='',players=[],busy=false,error='',message='',editId='',mode='list',draft=null;
 function shell(body){
- app.innerHTML='<div class="rm-shell"><span class="rm-back">RebelsPrep · Test Preview</span><h1>Roster</h1><p class="rm-subtitle">Try add, edit, remove and transfer with fake players. Refresh this page to reset.</p>'+ (error?'<p class="rm-error" role="alert">'+esc(error)+'</p>':'')+(message?'<p class="rm-success" role="status">'+esc(message)+'</p>':'')+body+'</div><nav class="coach-bottom-nav" aria-label="Coach navigation"><button data-coach-view="home">Home</button><button data-coach-view="practice">Practice</button><button data-coach-view="focus">Focus</button><button data-coach-view="more">More</button><button data-coach-view="roster" aria-current="page">Roster</button></nav>';
- app.querySelectorAll('.coach-bottom-nav [data-coach-view]').forEach(button=>button.addEventListener('click',()=>{const target=button.dataset.coachView;if(target==='roster')return;location.assign('./coach.html?v=420&view='+(target==='more'?'library':target));}));
+ app.innerHTML='<div class="rm-shell"><span class="rm-back">RebelsPrep · Test Roster</span><h1>Roster</h1><p class="rm-subtitle">'+(isOrgCoach(ctx?.account)?'Add, remove or transfer players across all team rosters.':'Add or remove players from your assigned team roster.')+'</p>'+ (error?'<p class="rm-error" role="alert">'+esc(error)+'</p>':'')+(message?'<p class="rm-success" role="status">'+esc(message)+'</p>':'')+body+'</div><nav class="coach-bottom-nav" aria-label="Coach navigation"><button data-coach-view="home">Home</button><button data-coach-view="practice">Practice</button><button data-coach-view="focus">Focus</button><button data-coach-view="more">More</button><button data-coach-view="roster" aria-current="page">Roster</button></nav>';
+ app.querySelectorAll('.coach-bottom-nav [data-coach-view]').forEach(button=>button.addEventListener('click',()=>{const target=button.dataset.coachView;if(target==='roster')return;alert('This separate test version covers Roster. The other coach screens remain unchanged in the live app.');}));
 }
 function permittedTeams(){return individual.filter(t=>canManageTeam(ctx?.account,t.id));}
 function page(){
@@ -161,7 +72,7 @@ function page(){
   const player=players.find(p=>p.id===editId);
   shell(pick+'<form id="rm-transfer-form" class="rm-form"><h2>Transfer '+esc(player?.name||'Player')+'</h2><label class="rm-label">Destination team<select id="rm-destination" aria-label="Destination team">'+choices.filter(t=>t.id!==teamId).map(t=>'<option value="'+esc(t.id)+'">'+esc(t.name)+'</option>').join('')+'</select></label><p>The player keeps her identity and history.</p><div class="rm-actions"><button type="button" id="rm-cancel">Cancel</button><button type="submit" class="rm-primary">Confirm Transfer</button></div></form>');
  }else if(mode==='form'){
-  const p=players.find(p=>p.id===editId)||{};
+  const p=draft||players.find(p=>p.id===editId)||{};
   shell(pick+'<form id="rm-form" class="rm-form"><h2>'+(editId?'Edit Player':'Add Player')+'</h2><label class="rm-label">Player name<input required maxlength="100" name="name" value="'+esc(p.name||'')+'"></label><label class="rm-label">Email (optional)<input type="email" maxlength="254" name="email" value="'+esc(p.email||'')+'"></label><label class="rm-label">Jersey number (optional)<input maxlength="12" name="jerseyNumber" value="'+esc(p.jerseyNumber||'')+'"></label><div class="rm-checks"><label><input type="checkbox" name="pitcher" '+(p.pitcher?'checked':'')+'> Pitcher</label><label><input type="checkbox" name="catcher" '+(p.catcher?'checked':'')+'> Catcher</label></div><div class="rm-actions"><button type="button" id="rm-cancel">Cancel</button><button class="rm-primary" type="submit" '+(busy?'disabled':'')+'>Save Player</button></div></form>');
  }else{
   shell(pick+'<div class="rm-actions"><strong>'+players.length+' active players</strong><button class="rm-primary" id="rm-add">+ Add Player</button></div><div class="rm-players">'+players.map(p=>'<article class="rm-player"><div><strong>'+esc(p.name)+'</strong><small>'+(p.pitcher?'Pitcher ':'')+(p.catcher?'Catcher ':'')+(p.jerseyNumber?'#'+esc(p.jerseyNumber):'')+'</small></div><div class="rm-actions"><button data-edit="'+esc(p.id)+'">Edit</button><button data-remove="'+esc(p.id)+'">Remove</button>'+(isOrgCoach(ctx.account)?'<button data-transfer="'+esc(p.id)+'">Transfer</button>':'')+'</div></article>').join('')+'</div>');
@@ -169,9 +80,9 @@ function page(){
  document.querySelectorAll('.rm-shell button, .rm-shell input, .rm-shell select').forEach(el=>el.disabled=busy);
  const selector=document.getElementById('rm-team');
  selector?.addEventListener('change',e=>{teamId=e.target.value;editId='';mode='list';reload();});
- document.getElementById('rm-add')?.addEventListener('click',()=>{editId='';mode='form';error='';page();});
- document.getElementById('rm-cancel')?.addEventListener('click',()=>{editId='';mode='list';error='';page();});
- document.querySelectorAll('[data-edit]').forEach(b=>b.addEventListener('click',()=>{editId=b.dataset.edit;mode='form';error='';page();}));
+ document.getElementById('rm-add')?.addEventListener('click',()=>{editId='';draft=null;mode='form';error='';page();});
+ document.getElementById('rm-cancel')?.addEventListener('click',()=>{editId='';draft=null;mode='list';error='';page();});
+ document.querySelectorAll('[data-edit]').forEach(b=>b.addEventListener('click',()=>{editId=b.dataset.edit;draft=null;mode='form';error='';page();}));
  document.querySelectorAll('[data-remove]').forEach(b=>b.addEventListener('click',()=>remove(b.dataset.remove)));
  document.querySelectorAll('[data-transfer]').forEach(b=>b.addEventListener('click',()=>{editId=b.dataset.transfer;mode='transfer';error='';page();}));
  document.getElementById('rm-transfer-form')?.addEventListener('submit',e=>{e.preventDefault();transfer(editId,document.getElementById('rm-destination').value);});
@@ -183,15 +94,16 @@ async function reload(){
  try{error='';const rows=await loadTeamRoster(ctx.account,selected);if(version!==loadVersion)return;players=rows;page();}catch(e){if(version!==loadVersion)return;error=e.message||String(e);page();}
 }
 async function save(form){
- if(busy)return;busy=true;error='';message='';page();
+ if(busy)return;
  const values={name:form.get('name'),email:form.get('email'),jerseyNumber:form.get('jerseyNumber'),pitcher:form.has('pitcher'),catcher:form.has('catcher')};
- try{if(editId)await editRosterPlayer(ctx.account,teamId,editId,values);else await addRosterPlayer(ctx.account,teamId,values);message=editId?'Player updated.':'Player added.';editId='';mode='list';await reload();}
+ draft=values;busy=true;error='';message='';page();
+ try{if(editId)await editRosterPlayer(ctx.account,teamId,editId,values);else await addRosterPlayer(ctx.account,teamId,values);message=editId?'Player updated.':'Player added.';editId='';draft=null;mode='list';await reload();}
  catch(e){error=e.message||String(e);page();}
  finally{busy=false;page();}
 }
 async function remove(id){
  if(busy)return;const player=players.find(p=>p.id===id);if(!player)return;
- if(!confirm('Remove '+player.name+' from this team? This does not affect HotB.'))return;
+ if(!confirm('Remove '+player.name+' from this team? Her history will be preserved.'))return;
  busy=true;error='';message='';page();
  try{await removeRosterPlayer(ctx.account,teamId,id);message=player.name+' removed from this team.';await reload();}
  catch(e){error=e.message||String(e);page();}
@@ -212,62 +124,9 @@ async function transfer(id,selected){
 try{
  ctx=await accountContext();
  if(!ctx?.user||!isCoach(ctx.account)){shell('<p>Sign in as an assigned coach to manage a team roster.</p><a href="./coach.html?v=420">Coach Sign In</a>');}
- else{teamId=permittedTeams()[0]?.id||'';await reload();}
+ else{teamId=source;await reload();}
 }catch(e){error=e.message||String(e);shell('<a href="./coach.html?v=420">Return to Coach Sign In</a>');}
-function card(label,title,copy,target,extra=''){return '<button class="coach-card" data-coach-view="'+target+'"><div class="eyebrow">'+esc(label)+'</div><h2>'+esc(title)+extra+'</h2><p>'+esc(copy)+'</p></button>';}
-function coachHome(){return '<div class="coach-portal-home"><section class="coach-greeting"><div class="eyebrow">COACH PORTAL</div><h1>Hi, '+esc(firstName())+'</h1><p>Your practice assignments, player focus and Rebels drill tools are all in one place.</p></section><div class="coach-card-stack">'+
- card('PRACTICE','My Practice','See your active practice, current station, players and drill instructions.','practice')+
- card('PLAYER DEVELOPMENT','Player Focus','Open your team roster, review focus status and add player observations.','focus')+
- card('LIBRARY','Drill Library','Browse the RebelsPrep drill library and open full drill instructions.','library')+
- card('TEAM','Roster','View and manage the players on your team.','roster')+
- '</div>'+accountActions()+'</div>';}
-function previewNav(){return '<nav class="coach-bottom-nav"><button data-coach-view="home" aria-current="page">Home</button><button data-coach-view="practice">Practice</button><button data-coach-view="focus">Focus</button><button data-coach-view="more">More</button><button data-coach-view="roster">Roster</button></nav>';}
-function firstName(){return 'Coach';}function accountActions(){return '';}
-function dashboard(){app.innerHTML=coachHome()+previewNav();}
-document.addEventListener('click',event=>{const button=event.target.closest('[data-coach-view]');if(!button)return;event.preventDefault();event.stopImmediatePropagation();const destination=button.dataset.coachView;if(destination==='home'){dashboard();}else if(destination==='roster'){mode='list';editId='';error='';message='';reload();}else{alert('This test preview covers the dashboard and Roster. Other screens are unchanged.');}},true);
-dashboard();
 
-(()=>{/* Coach bottom nav: Home, Practice, Focus, Drills, Roster. Keep the native More control only as a hidden routing driver for Drill Library. */
-const app=document.getElementById('app');
-const icons={
- roster:'<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="7" r="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3 21v-3a6 6 0 0 1 12 0v3M16 4a3 3 0 0 1 0 6M17 13a5 5 0 0 1 4 5v3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>',
- home:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 10.5 12 3l8.5 7.5v9.5h-6v-6h-5v6h-6z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></svg>',
- practice:'<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.4" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M5.8 7.6c2.1 1 3.8 2.7 4.8 4.8m7.6-4.8c-2.1 1-3.8 2.7-4.8 4.8m-7.6 4c2.1-1 3.8-2.7 4.8-4.8m7.6 4c-2.1-1-3.8-2.7-4.8-4.8" fill="none" stroke="currentColor" stroke-width="1.45" stroke-linecap="round"/></svg>',
- focus:'<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5.2" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg>',
- drills:'<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="4" width="14" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8.2 8h7.6M8.2 12h7.6M8.2 16h5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>'
-};
-function label(button,key,text){button.classList.add('coach-nav-item');button.innerHTML='<span class="coach-nav-icon">'+icons[key]+'</span><span class="coach-nav-label">'+text+'</span>';}
-function patchNav(){
- const nav=app?.querySelector('.coach-bottom-nav');
- if(!nav)return;
- nav.classList.add('coach-bottom-nav-hotb');
- const home=[...nav.querySelectorAll('button')].find(b=>b.dataset.coachView==='home');
- const practice=[...nav.querySelectorAll('button')].find(b=>b.dataset.coachView==='practice');
- const focus=[...nav.querySelectorAll('button')].find(b=>b.dataset.coachView==='focus');
- const roster=nav.querySelector('[data-coach-view="roster"]');
- if(roster&&!roster.querySelector('.coach-nav-icon'))label(roster,'roster','Roster');
- const more=[...nav.querySelectorAll('button')].find(b=>b.dataset.coachView==='more');
- if(home&&!home.querySelector('.coach-nav-icon'))label(home,'home','Home');
- if(practice&&!practice.querySelector('.coach-nav-icon'))label(practice,'practice','Practice');
- if(focus&&!focus.querySelector('.coach-nav-icon'))label(focus,'focus','Focus');
- let drills=nav.querySelector('[data-rp-drills="1"]');
- if(!drills&&more){
-  drills=document.createElement('button');drills.type='button';drills.dataset.rpDrills='1';
-  label(drills,'drills','Drills');
-  drills.addEventListener('click',()=>{
-   const driver=[...nav.querySelectorAll('button')].find(b=>b.dataset.coachView==='more');
-   if(!driver)return;
-   const old=driver.dataset.coachView;driver.dataset.coachView='library';driver.click();driver.dataset.coachView=old;
-  });
-  nav.insertBefore(drills,more);
- }else if(drills&&!drills.querySelector('.coach-nav-icon'))label(drills,'drills','Drills');
- if(more){more.hidden=true;more.style.display='none';more.setAttribute('aria-hidden','true');more.tabIndex=-1;}
- nav.querySelectorAll('.coach-nav-item:not([hidden])').forEach(b=>{b.style.flex='1 1 20%';});
- const title=app?.querySelector('.coach-page-head h1')?.textContent?.trim()||'';
- if(title==='Drill Library'){
-  nav.querySelectorAll('[aria-current="page"]').forEach(b=>b.removeAttribute('aria-current'));
-  drills?.setAttribute('aria-current','page');
- }
-}
-if(app){const observer=new MutationObserver(()=>queueMicrotask(patchNav));observer.observe(app,{childList:true,subtree:true});patchNav();}
-})();</script></html>
+document.getElementById('test-access').addEventListener('change',async e=>{testRole=e.target.value;ctx=await accountContext();teamId=testRole==='coachB'?target:source;mode='list';draft=null;editId='';error='';message='';await reload();});
+document.getElementById('reset-test').addEventListener('click',()=>{if(confirm('Reset all fake players and start again?'))location.reload();});
+</script></body></html>
